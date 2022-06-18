@@ -257,7 +257,7 @@ router.post(`/signin`, async (req, res) => {
         }
 
     } catch (err) {
-        res.status(500).json({ success: false, message: 'Error in User Routes (delete)', error: err })
+        res.status(500).json({ success: false, message: 'Error in User Routes (post)', error: err })
     }
 })
 
