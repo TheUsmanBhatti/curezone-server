@@ -4,7 +4,7 @@
   "description": "This file contains all the libraries used in creating of API's for CureZone app, which is related to health, In which user can take appointment with doctors, and consult with him with video call, and many other features in it.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "M. Usman Bhatti",
