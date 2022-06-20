@@ -10,22 +10,22 @@ exports.generateOTP = () => {
     return otp;
 }
 
-// exports.mailTransport = () => nodemailer.createTransport({
-//     host: "smtp.mailtrap.io",
-//     port: 2525,
-//     auth: {
-//         user: process.env.MAILTRAP_USERNAME,
-//         pass: process.env.MAILTRAP_PASSWORD
-//     }
-// });
-
 exports.mailTransport = () => nodemailer.createTransport({
-  service: 'gmail',
+    host: "smtp.mailtrap.io",
+    port: 2525,
     auth: {
-        user: 'curezone01@gmail.com',
-        pass: 'CureZone@123'
+        user: process.env.MAILTRAP_USERNAME,
+        pass: process.env.MAILTRAP_PASSWORD
     }
 });
+
+// exports.mailTransport = () => nodemailer.createTransport({
+//   service: 'gmail',
+//     auth: {
+//         user: 'curezone01@gmail.com',
+//         pass: 'CureZone@123'
+//     }
+// });
 
 
 exports.generateEmailtemplate = code => {
