@@ -22,8 +22,8 @@ exports.generateOTP = () => {
 exports.mailTransport = () => nodemailer.createTransport({
   service: 'gmail',
     auth: {
-        user: process.env.MAILTRAP_USERNAME,
-        pass: process.env.MAILTRAP_PASSWORD
+        user: 'curezone01@gmail.com',
+        pass: 'CureZone@123'
     }
 });
 
